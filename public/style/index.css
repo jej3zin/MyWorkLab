@@ -1,0 +1,30 @@
+/* ========== MASTER IMPORT ========== */
+
+/* 1. Reset (Zera tudo para evitar heranças esquisitas) */
+@import url('./_reset.css');
+
+/* 2. Tokens & Variables (:root + light theme) */
+@import url('./_variables.css');
+
+/* 3. Estilos globais (body, html, tipografia, links) */
+@import url('./_global.css');
+
+/* ========== LAYOUT ========== */
+@import url('./layout/header.css');
+@import url('./layout/main.css');
+@import url('./layout/footer.css');
+
+/* ========== COMPONENTES ========== */
+@import url('./components/buttons.css');
+@import url('./components/loader.css');
+@import url('./components/modals.css');
+@import url('./components/toast.css');
+
+/* ========== MODALS  ========== */
+
+/* ========== PÁGINAS (escopo local, SEM sobrescrever globais) ========== */
+@import url('./pages/dashboard.css');
+
+/* ========== UTILITIES FINAIS (sempre por último) ========== */
+@import url('./utilities/animations.css');
+@import url('./utilities/utilities.css');
