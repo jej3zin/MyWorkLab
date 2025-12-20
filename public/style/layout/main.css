@@ -1,3 +1,10 @@
 .main {
+  padding: 0 8rem;
   padding-top: var(--header-height);
+}
+.box-seach {
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
 }
