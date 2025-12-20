@@ -1,0 +1,31 @@
+.head {
+  height: var(--header-height);
+  width: 100%;
+  padding: 0 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 24;
+  backdrop-filter: var(--blur-2);
+  border-bottom: var(--border-01);
+  background: var(--bg-01-2);
+  box-shadow: var(--shadow-01);
+}
+/* ========== Left ========== */
+.head-box-left {
+}
+.head-box-left img {
+  width: 2.5rem;
+  object-fit: cover;
+}
+
+/* ========== Right ========== */
+.head-box-right {
+}
+.head-box-right img {
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: cover;
+  border-radius: var(--radius-01);
+}
