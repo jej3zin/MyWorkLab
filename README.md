@@ -1,4 +1,5 @@
 # MyWorkLab
+
 # 🚀| Projeto My Work Lab.
 
 > Semelhante ao linktree, junto os melhores projetos (e funcionais) aqui.
@@ -9,25 +10,14 @@ Criar um espaço para:
 
 - Mostrar os projetos mais funcionais e bem feitos
 - Acompanhar novas atualizações por lá
-- 
-- 
 
 ---
-
-## ❔| Inclução
-
-- 
-- 
-- 
-- 
 
 ## 🛠️| Ferramentas
 
 - Html
 - CSS
 - JS
-- 
-- 
 
 ---
 
