@@ -2,7 +2,7 @@
 /* ======== TOKENS & VARIABLES ======== */
 :root {
   /* ===== HEIGHT & WIDTH ===== */
-  --header-height: 10vh;
+  --header-height: 8vh;
   --width-bar: 300px;
 
   /* ===== FONT & TYPOGRAPHY ===== */
@@ -38,7 +38,7 @@
   /* ===== TEXTS ===== */
   --text-01: #eeeeee;
   --text-02: #bdbdbd;
-  --text-03: rgba(238, 238, 238, 0.85);
+  --text-03: rgba(255, 255, 255, 0.5);
 
   --brand-01: #9853ff;
   --brand-02: rgba(134, 72, 229, 1);
@@ -66,8 +66,9 @@
   --card-border: 1px solid rgba(255, 255, 255, 0.04);
 
   /* ===== SHADOWS ===== */
-  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.18);
-  --shadow-md: 0 8px 18px rgba(0, 0, 0, 0.28);
+  --shadow-01: 0 6px 10px rgba(255, 255, 255, 0.1);
+  --shadow-02: 0 4px 10px rgba(0, 0, 0, 0.18);
+  --shadow-03: 0 8px 18px rgba(0, 0, 0, 0.28);
   --shadow-brand: 0 0 14px 3px rgba(255, 118, 0, 0.24);
   --shadow-danger: 0 0 12px 3px rgba(179, 58, 54, 0.18);
 
