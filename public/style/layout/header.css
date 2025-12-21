@@ -22,10 +22,153 @@
 
 /* ========== Right ========== */
 .head-box-right {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-04);
 }
-.head-box-right img {
+
+/* ===== S E A R C H  B A R ===== */
+.search-box {
+  width: min-content;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.search-box input {
+  height: 40px;
+  width: var(--width-bar);
+  padding: 10px 40px;
+  font-size: 15px;
+  color: var(--text-01);
+  border: var(--border-02);
+  outline: none;
+  border: var(--border-01);
+  border-radius: var(--radius-02);
+  background: var(--bg-03-2);
+  backdrop-filter: var(--blur-4);
+  transition: var(--anima-01);
+}
+/* Icon Lupa */
+.search-box .search-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-02);
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: var(--anima-01);
+
+  &:hover {
+    color: var(--brand-01);
+  }
+}
+/* Clear Icon */
+.search-box .clear-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-01);
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%) scale(0);
+  transition: var(--anima-01);
+}
+.search-box .clear-icon.show {
+  transform: translateY(-50%) scale(1);
+}
+/* Effects */
+.search-box input:hover,
+.search-box input:focus {
+  background: var(--brand-05);
+  border-color: var(--brand-02);
+}
+.search-box input::placeholder {
+  color: var(--text-03);
+}
+/* Label Invisível */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.search-icon {
+  z-index: 2;
+}
+/* Remove X nativo do input no Chrome, Edge e Safari */
+.search-box input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+/* Remove X nativo no Firefox */
+.search-box input::-moz-clear {
+  display: none;
+}
+
+/* resultados */
+#searchResults {
+  width: var(--width-bar);
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  right: 11.5rem;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 12;
+  background: var(--bg-03-2);
+  border: var(--border-01);
+  border-radius: var(--radius-02);
+  backdrop-filter: var(--blur-4);
+  transform: translateY(8px);
+  transition: var(--anima-01);
+}
+#searchResults.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.result-card {
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  border-radius: var(--radius-02);
+  backdrop-filter: var(--blur-3);
+  transition: background 0.2s, transform 0.15s;
+}
+.result-card:hover {
+  background: var(--brand-05);
+}
+.result-card img {
+  width: 2.5rem;
+  border-radius: var(--radius-01);
+}
+.star {
+  color: var(--attention-01);
+}
+
+/* ===== A V A T A R ===== */
+.avatarBtn {
+  display: flex;
+  align-items: center;
+}
+.avatarBtn img {
   height: 2.5rem;
   width: 2.5rem;
   object-fit: cover;
+  opacity: 0;
   border-radius: var(--radius-01);
+  transition: opacity 0.3s ease;
+}
+.avatarBtn img.loaded {
+  opacity: 1;
 }

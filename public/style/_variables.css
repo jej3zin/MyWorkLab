@@ -30,10 +30,15 @@
   --bg-02: #111111;
   --bg-02-2: rgba(17, 17, 17, 0.5);
   --bg-03: #333;
-  --bg-03-2: rgba(17, 17, 17, 0.5);
+  --bg-03-2: rgba(51, 51, 51, 0.5);
   --bg-04: rgba(0, 0, 0, 0.25);
   --bg-05: rgba(255, 255, 255, 0.025);
   --bg-06: rgba(255, 255, 255, 0.05);
+
+  /* ===== BACKGROUNDS FUNDS ===== */
+  --funds-01: rgba(0, 0, 0, 0.25);
+  --funds-02: rgba(0, 0, 0, 0.5);
+  --funds-03: rgba(0, 0, 0, 0.75);
 
   /* ===== TEXTS ===== */
   --text-01: #eeeeee;
@@ -48,6 +53,8 @@
   --brand-06: rgba(152, 83, 255, 0.1);
 
   /* ===== UTILITY COLORS ===== */
+  --attention-01: #fedc00ff;
+
   --danger-01: #b33a36;
   --danger-02: #c9302c;
   --danger-shadow-01: 0 0 13px 3px #b33a3680;
@@ -61,7 +68,7 @@
   /* ===== BORDERS ===== */
   --border-01: 1px solid rgba(255, 255, 255, 0.06);
   --border-01-2: 1px solid rgba(255, 255, 255, 0.2);
-  --border-02: 1px solid rgba(0, 0, 0, 0.5);
+  --border-02: 1px solid rgba(255, 255, 255, 0.12);
   --border-03: 1px solid rgba(255, 255, 255, 0.6);
   --card-border: 1px solid rgba(255, 255, 255, 0.04);
 
