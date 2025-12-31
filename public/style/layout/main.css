@@ -1,6 +1,10 @@
 .bg-main {
   min-height: 100vh;
-  background: var(--bg-03);
+  background: url(/asset/briefing/bg-main.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .main {
   padding: 0 8rem;
