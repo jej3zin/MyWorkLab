@@ -1,22 +1,25 @@
 .head {
   height: var(--header-height);
-  width: 100%;
-  padding: 0 8rem;
+  width: 80%;
+  margin-top: 1rem;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  left: 50%;
   z-index: 24;
   backdrop-filter: var(--blur-2);
-  border-bottom: var(--border-01);
+  border: var(--border-01);
+  border-radius: var(--radius-04);
   background: var(--bg-01-2);
   box-shadow: var(--shadow-01);
+  transform: translateX(-50%);
+  transition: var(--anima-01);
 }
 /* ========== Left ========== */
-.head-box-left {
-}
 .head-box-left img {
-  width: 2.5rem;
+  width: 9rem;
   object-fit: cover;
 }
 
