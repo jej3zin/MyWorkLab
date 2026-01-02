@@ -48,7 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
             (repo) => `
         <div class="result-card" data-repo="${repo.name}">
           <img src="${repo.owner.avatar_url}" alt="${repo.owner.login}">
-          <div>
+          
+          <div class="result-info">
             <strong>${repo.name}</strong>
             <small><ion-icon class="star" name="star"></ion-icon> ${repo.stargazers_count}</small>
           </div>

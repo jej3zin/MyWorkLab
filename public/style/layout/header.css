@@ -121,7 +121,7 @@
   overflow-y: auto;
   position: absolute;
   top: 100%;
-  right: 11.5rem;
+  right: 5.55rem;
   opacity: 0;
   pointer-events: none;
   z-index: 12;
@@ -141,6 +141,7 @@
 .result-card {
   width: 100%;
   padding: 0.5rem;
+  color: var(--text-01);
   cursor: pointer;
   display: flex;
   gap: 0.5rem;
@@ -149,10 +150,19 @@
   transition: background 0.2s, transform 0.15s;
 }
 .result-card:hover {
+  color: var(--brand-01);
   background: var(--brand-05);
 }
+.result-info {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+  flex-direction: column;
+}
 .result-card img {
+  height: 2.5rem;
   width: 2.5rem;
+  object-fit: cover;
   border-radius: var(--radius-01);
 }
 .star {
